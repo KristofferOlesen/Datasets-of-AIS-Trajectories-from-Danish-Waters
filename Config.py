@@ -16,12 +16,6 @@ class config(object):
     LON_MAX_SJÆLLAND = 13.5
     SOG_MAX_SJÆLLAND = 20
     
-    LAT_MIN_ANHOLT = 56
-    LAT_MAX_ANHOLT = 57.5
-    LON_MIN_ANHOLT = 10.7
-    LON_MAX_ANHOLT = 13.0
-    SOG_MAX_ANHOLT = 20
-    
     LAT_RES = 0.01
     LON_RES = 0.01
     SOG_RES = 0.5
@@ -31,11 +25,6 @@ class config(object):
     LON_EDGES = np.around(np.arange(LON_MIN_BORNHOLM, LON_MAX_BORNHOLM+(LON_RES/10000), LON_RES), decimals=2)
     SOG_EDGES = np.around(np.arange(0, SOG_MAX_BORNHOLM+(SOG_RES/10000), SOG_RES), decimals=1)
     COG_EDGES = np.around(np.arange(0, 360+(COG_RES/10000), COG_RES), decimals=0)
-
-    LAT_EDGES_ANHOLT = np.around(np.arange(LAT_MIN_ANHOLT, LAT_MAX_ANHOLT+(LAT_RES/10000), LAT_RES), decimals=2)
-    LON_EDGES_ANHOLT = np.around(np.arange(LON_MIN_ANHOLT, LON_MAX_ANHOLT+(LON_RES/10000), LON_RES), decimals=2)
-    SOG_EDGES_ANHOLT = np.around(np.arange(0, SOG_MAX_ANHOLT+(SOG_RES/10000), SOG_RES), decimals=2)
-    COG_EDGES_ANHOLT = np.around(np.arange(0, 360+(COG_RES/10000), COG_RES), decimals=2)
 
     #AIS INDEX MEANINGS
     STAT_NAV_STATUSES = [1, 5, 6, 15, 95, 98]
