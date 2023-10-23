@@ -88,8 +88,8 @@ def plotTrack(data, speed, ax, color=None, lsty='solid', insertSpeed=False):
 
     seq_len = data.shape[0]
 
-    lat = data[:,1]
-    lon = data[:,0]
+    lat = data[:,0]
+    lon = data[:,1]
 
     points = np.array([lon, lat]).T.reshape(-1, 1, 2)
     segments = np.concatenate([points[:-1], points[1:]], axis=1)
